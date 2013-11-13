@@ -9,10 +9,13 @@ angular.module('messageBoothApp')
 				if ($scope.users[i].name == "" || $scope.users[i].name == null){
 					$scope.users[i].name = "Update this Name"
 				}
+				//$scope.users[i].messages.unshift({from:"",text:"",user_name:""})
 			}
+			$scope.selectedMessageIndex = 0
 			console.log(d);
 	   });
-	$scope.updateSelection = function($event, message) {
+	
+	$scope.markAsRead = function($event, message) {
 		   var checkbox = $event.target;
 		   message.read = checkbox.checked;
 		   MessagesService.put(message.id, message);
