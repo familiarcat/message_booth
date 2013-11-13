@@ -170,6 +170,10 @@ module.exports = function (grunt) {
             '<%= yeoman.dist %>/styles/{,*/}*.css',
             '<%= yeoman.dist %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}',
             '<%= yeoman.dist %>/styles/fonts/*'
+			// ,
+			// 			'<%= yeoman.dist %>/css/*',
+			// 			'<%= yeoman.dist %>/css/font/*',
+			// 			'<%= yeoman.dist %>/css/images/*'
           ]
         }
       }
@@ -254,7 +258,10 @@ module.exports = function (grunt) {
             '.htaccess',
             'bower_components/**/*',
             'images/{,*/}*.{gif,webp}',
-            'fonts/*'
+            'fonts/*',
+			'css/*',
+			'css/font/*',
+			'css/images/*'
           ]
         }, {
           expand: true,
