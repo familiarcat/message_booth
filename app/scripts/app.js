@@ -24,8 +24,8 @@ angular.module('messageBoothApp', [
 angular.module('messageBoothApp')
 	.directive("clickToEdit", function() {
 	    var editorTemplate = '<div class="click-to-edit">' +
-	        '<div ng-hide="view.editorEnabled">' +
-	            '{{value}} ' +
+	        '<div ng-hide="view.editorEnabled">' + 
+	            '<h6>{{value}}</h6> ' +
 	            '<a ng-click="enableEditor()">Edit</a>' +
 	        '</div>' +
 	        '<div ng-show="view.editorEnabled">' +

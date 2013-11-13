@@ -22,9 +22,9 @@ body {
 }
 
 label {
-    display: block;
-    padding-left: 15px;
-    text-indent: -15px;
+    /*display: block;
+        padding-left: 15px;
+        text-indent: -15px;*/
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -35,15 +35,16 @@ label {
     padding-right: 15px;
 }
 
+.messageBody {
+	padding-top:10px;
+}
+
 #userItemRenderer {
 	@include single-box-shadow;
 	margin-left: 15px;
 	padding: 0px;
 }
 
-.click-to-edit {
-	font-size:14px;
-}
 
 .click-to-edit .a {
 	font-size:10px;
@@ -51,6 +52,7 @@ label {
 
 .userItem {
    padding: 15px;
+   margin-left: -15px;
    border-bottom: 3px solid #C8BCAC;
    border-right:  3px solid #C8BCAC;
    border-top:  3px solid #FCF1E3;

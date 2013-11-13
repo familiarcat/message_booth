@@ -4,6 +4,12 @@ angular.module('messageBoothApp')
   .controller('UsersViewController', function ($scope, UsersService, MessagesService) {
        UsersService.get().then(function(d){
 			$scope.users = d;
+			for (var i=0;i<$scope.users.length;i++){
+				console.log($scope.users[i])
+				if ($scope.users[i].name == "" || $scope.users[i].name == null){
+					$scope.users[i].name = "Update this Name"
+				}
+			}
 			console.log(d);
 	   });
 	$scope.updateSelection = function($event, message) {
